@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+<TextView
+    android:id="@+id/tv_name_home"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Welcome, Name"
+    android:fontFamily="@font/main"
+    android:textSize="22sp"
+    android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/tv_registered_home"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Registered Users: "
+        android:fontFamily="@font/main"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/tv_active_home"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Active Accounts:"
+        android:fontFamily="@font/main"
+        android:textSize="18sp"
+        android:textColor="@color/white"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_registered_home"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/final_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_shield_check_fill"
+            android:drawableTint="@color/white"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/main"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Verify Registered Accounts"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_taskbrowser_home"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="@color/final_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+        <TextView
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_shield_check_fill"
+            android:drawableTint="@color/white"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/main"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="Internship Tasks Browser"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
